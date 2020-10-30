@@ -48,6 +48,17 @@ for (var i = 0; i < classe.length; i++) {
 
 }
 
-// tramite 3 prompt, chiedere all'utente il nome, il cognome e l'età di un nuovo studente. Creare con questi dati un nuovo oggetto e inserirlo nell'array del punto precedente.
+
+var nuovoStudente = {};
+// tramite 3 prompt, chiedere all'utente il nome, il cognome e l'età di un nuovo studente.
+nuovoStudente['nome'] = prompt('nome');
+nuovoStudente['cognome'] = prompt('cognome');
+nuovoStudente['eta'] = prompt('eta');
+
+// Creare con questi dati un nuovo oggetto e inserirlo nell'array del punto precedente.
+console.log(nuovoStudente);
+classe.push(nuovoStudente);
+console.log(classe);
+
 
 });
